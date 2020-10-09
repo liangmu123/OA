@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "出差",
+  "usingComponents": {
+    "fill-in": "/components/fill-in/fill-in"
+  }
+}

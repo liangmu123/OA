@@ -1,0 +1,78 @@
+{
+	"pages": [ {
+            "path" : "pages/schedule/schedule",
+            "style" : {
+				"navigationBarTitleText": "日程",
+				"usingComponents":{
+					"van-calendar":"/wxcomponents/vant/dist/calendar/index"
+				}
+			}
+        },{
+		"path": "pages/home/home",
+		"style": {
+			"navigationBarTitleText": "首页"
+		}
+	},{
+		"path": "pages/application/application",
+		"style": {
+			"navigationBarTitleText": "应用"
+		}
+	},{
+		"path": "pages/mailList/mailList",
+		"style": {
+			"navigationBarTitleText": "通讯录",
+			"usingComponents":{
+				"van-index-bar": "/wxcomponents/vant/dist/index-bar/index",
+				"van-index-anchor": "/wxcomponents/vant/dist/index-anchor/index",
+				"van-cell": "/wxcomponents/vant/dist/cell/index"
+			} 
+		}
+	},{
+		"path": "pages/mineCenter/mineCenter",
+		"style": {
+			"navigationBarTitleText": "我的"
+		}
+	} ,{
+            "path" : "pages/business_travel/business_travel",
+            "style" : {
+				"navigationBarTitleText": "出差"
+			}
+        }
+        ,{
+            "path" : "pages/mailListCard/mailListCard",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/announcement/announcement",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#2781F6",
+		"backgroundColor": "#FFFFFF",
+		"usingComponents":{
+			"van-uploader": "/wxcomponents/vant/dist/uploader/index",
+			"van-area":"/wxcomponents/vant/dist/area/index",
+			"van-datetime-picker":"/wxcomponents/vant/dist/datetime-picker/index",
+			"van-area":"/wxcomponents/vant/dist/area/index",
+			"van-popup":"/wxcomponents/vant/dist/popup/index"
+		}
+	},
+	"tabBar":{
+		"custom":true,
+		"color":"#999",
+		"selectedColor":"#000",
+		"borderStyle":"black",
+		"backgroundColor":"#fff",
+		"list":[
+			{"selectedIconPath":"static/images/info_active.png","iconPath":"static/images/info.png","pagePath":"pages/home/home","text":"消息"},
+			{"selectedIconPath":"static/images/application_active.png","iconPath":"static/images/application.png","pagePath":"pages/application/application","text":"应用"},
+			{"selectedIconPath":"static/images/maillist_active.png","iconPath":"static/images/maillist.png","pagePath":"pages/mailList/mailList","text":"通讯录"},
+			{"selectedIconPath":"static/images/minecenter_active.png","iconPath":"static/images/minecenter.png","pagePath":"pages/mineCenter/mineCenter","text":"我的"},
+			{"selectedIconPath":"static/images/date.png","iconPath":"static/images/date.png","pagePath":"pages/schedule/schedule"}
+		]
+	},
+	"usingComponents":{}
+}

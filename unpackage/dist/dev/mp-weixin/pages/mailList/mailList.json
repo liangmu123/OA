@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "通讯录",
+  "usingComponents": {
+    "van-index-bar": "/wxcomponents/vant/dist/index-bar/index",
+    "van-index-anchor": "/wxcomponents/vant/dist/index-anchor/index",
+    "van-cell": "/wxcomponents/vant/dist/cell/index",
+    "uni-indexed-list": "/components/uni-indexed-list/uni-indexed-list"
+  }
+}

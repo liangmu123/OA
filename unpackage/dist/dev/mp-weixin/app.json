@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/schedule/schedule",
+    "pages/home/home",
+    "pages/application/application",
+    "pages/mailList/mailList",
+    "pages/mineCenter/mineCenter",
+    "pages/business_travel/business_travel",
+    "pages/mailListCard/mailListCard",
+    "pages/announcement/announcement"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#2781F6",
+    "backgroundColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#999",
+    "selectedColor": "#000",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "selectedIconPath": "static/images/info_active.png",
+        "iconPath": "static/images/info.png",
+        "pagePath": "pages/home/home",
+        "text": "消息"
+      },
+      {
+        "selectedIconPath": "static/images/application_active.png",
+        "iconPath": "static/images/application.png",
+        "pagePath": "pages/application/application",
+        "text": "应用"
+      },
+      {
+        "selectedIconPath": "static/images/maillist_active.png",
+        "iconPath": "static/images/maillist.png",
+        "pagePath": "pages/mailList/mailList",
+        "text": "通讯录"
+      },
+      {
+        "selectedIconPath": "static/images/minecenter_active.png",
+        "iconPath": "static/images/minecenter.png",
+        "pagePath": "pages/mineCenter/mineCenter",
+        "text": "我的"
+      },
+      {
+        "selectedIconPath": "static/images/date.png",
+        "iconPath": "static/images/date.png",
+        "pagePath": "pages/schedule/schedule"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-uploader": "/wxcomponents/vant/dist/uploader/index",
+    "van-area": "/wxcomponents/vant/dist/area/index",
+    "van-datetime-picker": "/wxcomponents/vant/dist/datetime-picker/index",
+    "van-popup": "/wxcomponents/vant/dist/popup/index"
+  },
+  "sitemapLocation": "sitemap66.json"
+}

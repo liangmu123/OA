@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "日程",
+  "usingComponents": {
+    "van-calendar": "/wxcomponents/vant/dist/calendar/index"
+  }
+}

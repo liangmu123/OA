@@ -1,0 +1,92 @@
+
+.container.data-v-92bb8f34{
+		font-size: 24rpx;
+		background: #F3F3F3;
+		min-height: 100vh;
+}
+.list.data-v-92bb8f34{
+	width:calc(100% - 64rpx);
+	height: 88rpx;
+	padding: 32rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	background: #fff;
+	margin-bottom:4rpx;
+}
+.info_pic.data-v-92bb8f34{
+	width: 88rpx;
+	height: 88rpx;
+	background: #007AFF;
+	border-radius: 8rpx;
+}
+.info_pic_img.data-v-92bb8f34{
+	width: 88rpx;
+	height: 88rpx;
+	border-radius: 8rpx;
+}
+.content.data-v-92bb8f34{
+	width: 464rpx;
+	height: 88rpx;
+	margin-left: 16rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.content_title.data-v-92bb8f34{
+	color: #000000;
+	font-size: 32rpx;
+	font-weight: bold;
+}
+.content_detail.data-v-92bb8f34{
+	color: #8F8F8F;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.time_tips.data-v-92bb8f34{
+	height: 88rpx;
+	margin-left: 86rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.time.data-v-92bb8f34{
+	color: #B6B6B6;
+	font-size: 16rpx;
+}
+.tips.data-v-92bb8f34{
+	width: 24rpx;
+	height: 24rpx;
+	border-radius: 50%;
+	color: #fff;
+	background: #FC4949;
+	text-align: center;
+	line-height: 24rpx;
+	font-size:16rpx;
+}
+
