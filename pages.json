@@ -40,11 +40,63 @@
         }
         ,{
             "path" : "pages/mailListCard/mailListCard",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText": "个人信息"
+			}
         }
         ,{
             "path" : "pages/announcement/announcement",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText": "公告"
+			}
+        }
+        ,{
+            "path" : "pages/notice/notice",
+            "style" : {
+				"navigationBarTitleText": "通知"
+			}
+        }
+        ,{
+            "path" : "pages/entry/entry",
+            "style" : {
+				"navigationBarTitleText": "入职"
+			}
+        }
+        ,{
+            "path" : "pages/becomeRegular/becomeRegular",
+            "style" : {
+				"navigationBarTitleText": "转正"
+			}
+        }
+        ,{
+            "path" : "pages/reimbursement/reimbursement",
+            "style" : {
+				"navigationBarTitleText": "报销"
+			}
+        }
+        ,{
+            "path" : "pages/leave/leave",
+            "style" : {
+				"navigationBarTitleText": "请假"
+			}
+        }
+        ,{
+            "path" : "pages/train/train",
+            "style" : {
+				"navigationBarTitleText": "培训"
+			}
+        }
+        ,{
+            "path" : "pages/jobTransfer/jobTransfer",
+            "style" : {
+				"navigationBarTitleText": "调岗"
+			}
+        }
+        ,{
+            "path" : "pages/goOut/goOut",
+            "style" : {
+				"navigationBarTitleText": "外出"
+			}
         }
     ],
 	"globalStyle": {

@@ -11,9 +11,9 @@
 /* 9 */,
 /* 10 */,
 /* 11 */
-/*!***************************************************************************!*\
-  !*** D:/test/oaSys_uniapp/main.js?{"page":"pages%2Fschedule%2Fschedule"} ***!
-  \***************************************************************************/
+/*!******************************************************************!*\
+  !*** D:/works/OA/main.js?{"page":"pages%2Fschedule%2Fschedule"} ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26,9 +26,9 @@ createPage(_schedule.default);
 
 /***/ }),
 /* 12 */
-/*!********************************************************!*\
-  !*** D:/test/oaSys_uniapp/pages/schedule/schedule.vue ***!
-  \********************************************************/
+/*!***********************************************!*\
+  !*** D:/works/OA/pages/schedule/schedule.vue ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -66,9 +66,9 @@ component.options.__file = "pages/schedule/schedule.vue"
 
 /***/ }),
 /* 13 */
-/*!***************************************************************************************************!*\
-  !*** D:/test/oaSys_uniapp/pages/schedule/schedule.vue?vue&type=template&id=f8d83f34&scoped=true& ***!
-  \***************************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** D:/works/OA/pages/schedule/schedule.vue?vue&type=template&id=f8d83f34&scoped=true& ***!
+  \******************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -87,9 +87,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 14 */
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/test/oaSys_uniapp/pages/schedule/schedule.vue?vue&type=template&id=f8d83f34&scoped=true& ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/works/OA/pages/schedule/schedule.vue?vue&type=template&id=f8d83f34&scoped=true& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -113,9 +113,9 @@ render._withStripped = true
 
 /***/ }),
 /* 15 */
-/*!*********************************************************************************!*\
-  !*** D:/test/oaSys_uniapp/pages/schedule/schedule.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************/
+/*!************************************************************************!*\
+  !*** D:/works/OA/pages/schedule/schedule.vue?vue&type=script&lang=js& ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -128,9 +128,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 16 */
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/test/oaSys_uniapp/pages/schedule/schedule.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/works/OA/pages/schedule/schedule.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -205,14 +205,15 @@ var _index = __webpack_require__(/*! @/utils/index.js */ 18); //
 //
 //
 //
-var _default = { data: function data() {return { // 日历范围和默认时间
+var _default = { data: function data() {return { iosHeight: true, // 日历范围和默认时间
       minDate: new Date().setMonth(new Date().getMonth() - 3), maxDate: new Date().setMonth(new Date().getMonth() + 3), Today: new Date().getTime(), //日历格式
       formatter: function formatter(day) {var tmp = (0, _index.formatDate)(day.date).split('-');var lunar = _calendar.calendar.solar2lunar(tmp[0], tmp[1], tmp[2]);day.topInfo = lunar.lunarFestival || lunar.festival || lunar.IDayCn;day.bottomInfo = '1';day.className = lunar.ncWeek == '星期六' || lunar.ncWeek == '星期日' ? 'weekend' : ''; // const date=day.date.getDate()
         return day;}, // 根据系统调整按钮位置,默认ios
       bottom: '274rpx', // 上拉事件所需
       clientyStart: '', clientyEnd: '', canstretch: false, // 事件标题日期
       dateTitle: '', weekTitle: '', weeks: ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'], // 事件内容
-      eventList: [{ startTime: '上午9：30', endTime: '上午11：00', detail: '产品需求讲解会' }, { startTime: '上午9：30', endTime: '上午11：00', detail: '产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会' }, { startTime: '上午9：30', endTime: '上午11：00', detail: '产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会' }, { startTime: '上午9：30', endTime: '上午11：00', detail: '产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会' }, { startTime: '上午9：30', endTime: '上午11：00', detail: '产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会' }, { startTime: '上午9：30', endTime: '上午11：00', detail: '产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会' }, { startTime: '上午9：30', endTime: '上午11：00', detail: '产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会' }] };
+      eventList: [{ startTime: '上午9：30', endTime: '上午11：00', detail: '产品需求讲解会' }, { startTime: '上午9：30', endTime: '上午11：00', detail: '产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会' }, { startTime: '上午9：30', endTime: '上午11：00', detail: '产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会' }, { startTime: '上午9：30', endTime: '上午11：00', detail: '产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会' }, { startTime: '上午9：30', endTime: '上午11：00', detail: '产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会' }, { startTime: '上午9：30', endTime: '上午11：00', detail: '产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会' },
+      { startTime: '上午9：30', endTime: '上午11：00', detail: '产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会产品需求讲解会' }] };
 
 
   },
@@ -233,6 +234,18 @@ var _default = { data: function data() {return { // 日历范围和默认时间
         success: function success(res) {
           if (res.data == 'Android') {
             that.bottom = '206rpx';
+          }
+        } });
+
+    },
+
+    adjustHeightContain: function adjustHeightContain() {
+      var that = this;
+      uni.getStorage({
+        key: 'Device_info',
+        success: function success(res) {
+          if (res.data == 'Android') {
+            that.iosHeight = false;
           }
         } });
 
@@ -270,6 +283,8 @@ var _default = { data: function data() {return { // 日历范围和默认时间
 
     this.adjustHeight();
 
+    this.adjustHeightContain();
+
     // 初始event盒子上时间标题
     var weekDay = this.weeks[new Date().getDay()];
     this.dateTitle = (0, _index.formatDatePoint)(new Date());
@@ -281,9 +296,9 @@ var _default = { data: function data() {return { // 日历范围和默认时间
 /* 17 */,
 /* 18 */,
 /* 19 */
-/*!*****************************************************************************************************************!*\
-  !*** D:/test/oaSys_uniapp/pages/schedule/schedule.vue?vue&type=style&index=0&id=f8d83f34&scoped=true&lang=css& ***!
-  \*****************************************************************************************************************/
+/*!********************************************************************************************************!*\
+  !*** D:/works/OA/pages/schedule/schedule.vue?vue&type=style&index=0&id=f8d83f34&scoped=true&lang=css& ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -296,9 +311,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 20 */
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/test/oaSys_uniapp/pages/schedule/schedule.vue?vue&type=style&index=0&id=f8d83f34&scoped=true&lang=css& ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/works/OA/pages/schedule/schedule.vue?vue&type=style&index=0&id=f8d83f34&scoped=true&lang=css& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

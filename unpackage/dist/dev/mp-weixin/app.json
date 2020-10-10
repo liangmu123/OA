@@ -7,7 +7,15 @@
     "pages/mineCenter/mineCenter",
     "pages/business_travel/business_travel",
     "pages/mailListCard/mailListCard",
-    "pages/announcement/announcement"
+    "pages/announcement/announcement",
+    "pages/notice/notice",
+    "pages/entry/entry",
+    "pages/becomeRegular/becomeRegular",
+    "pages/reimbursement/reimbursement",
+    "pages/leave/leave",
+    "pages/train/train",
+    "pages/jobTransfer/jobTransfer",
+    "pages/goOut/goOut"
   ],
   "subPackages": [],
   "window": {
@@ -59,6 +67,5 @@
     "van-area": "/wxcomponents/vant/dist/area/index",
     "van-datetime-picker": "/wxcomponents/vant/dist/datetime-picker/index",
     "van-popup": "/wxcomponents/vant/dist/popup/index"
-  },
-  "sitemapLocation": "sitemap66.json"
+  }
 }

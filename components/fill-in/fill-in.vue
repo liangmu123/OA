@@ -11,7 +11,7 @@
 				</view>
 			</view>
 			
-			<view class="location" v-if="item.type=='location'||item.type=='select'||item.type=='time'||item.type=='input'" >
+			<view class="location" v-if="item.type=='location'||item.type=='select'||item.type=='time'||item.type=='input'||item.type=='selectCompany' ">
 				<view class="title">
 					<span  v-if="item.required" style="color: #FF0000;font-size: 32rpx;">*</span>
 					{{item.title}}
@@ -27,12 +27,20 @@
 						<image src="../../static/images/select.png" mode=""></image>
 					</view>
 				</view>
+				<view v-if="item.type=='selectCompany'" @click="chooseCompany(index)" class="select_box">
+					<view class="selected">
+						{{item.company}}
+					</view>
+					<view class="select_png">
+						<image src="../../static/images/select.png" mode=""></image>
+					</view>
+				</view>
 				<view v-if="item.type=='time'"  class="fill_time">
 					<input type="text" :value="item.hours" @input="enterHours" :data-id="index" />
 					小时
 				</view>
 				<view v-if="item.type=='input'" class="input">
-					<input type="text" value="" placeholder="请输入" />
+					<input type="text" :value="item.text" @input="enterInput" :data-id="index"  placeholder="请输入" />
 				</view>
 			</view>
 			
@@ -181,7 +189,10 @@
 				let {id}=e.target.dataset
 				this.$emit('enterTextarea',e,id)
 			},
-			
+			enterInput(e){
+				let {id}=e.target.dataset
+				this.$emit('enterInput',e,id)
+			},
 			afterRead(e){
 				console.log(e)
 			},

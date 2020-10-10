@@ -2,7 +2,14 @@
 .container.data-v-92bb8f34{
 		font-size: 24rpx;
 		background: #F3F3F3;
-		min-height: 100vh;
+		min-height: calc(100vh - 230rpx);
+		margin-bottom: 230rpx;
+}
+.an_container.data-v-92bb8f34{
+	font-size: 24rpx;
+	background: #F3F3F3;
+	min-height: calc(100vh - 162rpx);
+	margin-bottom: 162rpx;
 }
 .list.data-v-92bb8f34{
 	width:calc(100% - 64rpx);

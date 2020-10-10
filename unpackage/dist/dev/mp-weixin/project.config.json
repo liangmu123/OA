@@ -66,8 +66,22 @@
       "list": [
         {
           "id": -1,
-          "name": "pages/announcement/announcement",
-          "pathName": "pages/announcement/announcement",
+          "name": "pages/entry/entry",
+          "pathName": "pages/entry/entry",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/becomeRegular/becomeRegular",
+          "pathName": "pages/becomeRegular/becomeRegular",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/goOut/goOut",
+          "pathName": "pages/goOut/goOut",
           "scene": null
         }
       ]
